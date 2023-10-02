@@ -101,6 +101,31 @@ body {
     padding: 12px 30px;
     border: none;
     border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btnCopy svg {
+    position: relative;
+    top: 2.5px;
+    rotate: -45deg;
+}
+
+.btnDownload{
+    color: #ffffff;
+    background-color: #3662E3;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btnDownload svg{
+    position: relative;
+    top: 1.6px;
 }
 
 .circle{
@@ -113,12 +138,56 @@ body {
 }
 
 .buttonsCont{
+    z-index: 99999;
     position: relative;
     top: 4rem;
+    right: 2.5rem;
     display: flex;
     gap: 30px;
 }
 
-@media screen and (min-width: 720px) {
-
-  }
+@media screen and (max-width: 640px) {
+    body{
+        width:100%;
+        height: 100%;
+        margin: 0 auto;
+        background: #111729;
+        color: #cbd5e1;
+        line-height: 1.5;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .backSvg {
+        width: 650px;
+        height: 520px;
+        z-index: 1;
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+    .inputCont {
+        width: 300px;
+        margin-top: 30px;
+        height: 50px;
+        background-color: #030617;
+        color: #364153;
+        border: 2px solid #3662E3;
+        padding-left: 30px;
+        border-radius: 15px;
+    }
+    .container button {
+        background-color: #3662E3;
+        color: #cbd5e1;
+        position: absolute;
+        right: 7px;
+        bottom: 6.5px;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
